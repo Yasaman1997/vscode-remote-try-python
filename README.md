@@ -1,3 +1,11 @@
+# I chose GPT2 model for this task since it is trained to guess another word from just raw data. it was very interesting for me, just that.
+
+# What comes below is the instructions I followed for creating the container and adding the API inference to it. 
+
+
+# If you run app.py , you will get the result of the model with the input data that i have given in the same file, printed.
+
+
 # Try Out Development Containers: Python
 
 A **development container** is a running [Docker](https://www.docker.com) container with a well-defined tool/runtime stack and its prerequisites. You can try out development containers with **[GitHub Codespaces](https://github.com/features/codespaces)** or **[Visual Studio Code Remote - Containers](https://aka.ms/vscode-remote/containers)**.
@@ -96,3 +104,7 @@ contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additio
 
 Copyright © Microsoft Corporation All rights reserved.<br />
 Licensed under the MIT License. See LICENSE in the project root for license information.
+
+
+
+

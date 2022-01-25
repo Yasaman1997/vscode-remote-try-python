@@ -4,8 +4,22 @@
 #-----------------------------------------------------------------------------------------
 
 from flask import Flask
+import json
+import requests
+
+API_URL = "https://api-inference.huggingface.co/models/gpt2"
+headers = {"Authorization": "Bearer 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"}
+
 app = Flask(__name__)
 
 @app.route("/")
-def hello():
-    return app.send_static_file("index.html")
+
+
+
+def query(payload):
+    data = json.dumps(payload)
+    response = requests.request("POST", API_URL, headers=headers, data=data)
+    return json.loads(response.content.decode("utf-8"))
+
+data = query("Can you please let us know more details about your ")
+print(data)
